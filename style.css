@@ -1,0 +1,700 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 0.625rem;
+}
+:root {
+  --text-color: #1e1c1a;
+  --primary-color: #d99655;
+  --bg-color: #fff0e3;
+  --p-text-color: #504c48;
+  --hover-color: #ad8025;
+  --Font-Bebas-Neue: "Bebas Neue", sans-serif;
+  --font-Plus-Jakarta: "Plus Jakarta Sans", sans-serif;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-y: hidden;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+h1 {
+  font-size: 7rem;
+  font-family: var(--Font-Bebas-Neue);
+  font-weight: 400;
+  line-height: 8.2rem;
+  color: var(--text-color);
+}
+h2 {
+  font-size: 5.6rem;
+  font-family: var(--Font-Bebas-Neue);
+  font-weight: 400;
+  line-height: 6rem;
+  color: var(--text-color);
+}
+h3 {
+  font-size: 4.6rem;
+  font-family: var(--Font-Bebas-Neue);
+  font-weight: 400;
+  line-height: 6rem;
+  color: var(--text-color);
+}
+h5 {
+  font-size: 2.7rem;
+  font-family: var(--font-Plus-Jakarta);
+  font-weight: 600;
+  line-height: 4rem;
+  color: var(--text-color);
+}
+h6 {
+  font-size: 2rem;
+  font-family: var(--Font-Bebas-Neue);
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-color);
+}
+p {
+  font-size: 1.8rem;
+  font-family: var(--font-Plus-Jakarta);
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: var(--p-text-color);
+}
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  padding: 1.5rem 3.5rem;
+  border: none;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--Font-Bebas-Neue);
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn i {
+  margin-left: 1rem;
+}
+.btn:hover {
+  background: var(--hover-color);
+}
+
+/* header section start */
+#home{
+  position: relative;
+}
+.image-item-01{
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+.image-item-02{
+  position: absolute;
+  top: 25%;
+  right: 20%;
+}
+.image-item-03{
+  position: absolute;
+  top: 45%;
+  left: 24%;
+}
+.image-item-04{
+  position: absolute;
+  top: 45%;
+  right: 0%;
+}
+
+.header {
+  background: #ffffff;
+  width: 94%;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation ul {
+  display: flex;
+  align-items: center;
+}
+.navigation ul li {
+  list-style: none;
+}
+.navigation ul li a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  font-family: var(--font-Plus-Jakarta);
+  color: var(--text-color);
+  transition: 0.5s;
+}
+.navigation .side-menu {
+  display: none;
+}
+.navigation ul li:nth-child(1),
+li:nth-child(2) {
+  border-right: 1px solid var(--text-color);
+}
+.navigation ul li a:hover {
+  color: var(--primary-color);
+}
+/* hero section */
+.hero-sec {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  padding-top: 4rem;
+}
+/* hero content */
+.hero_content {
+  padding: 0 6rem;
+  text-align: center;
+}
+.hero_content h1 {
+  padding: 0 5rem;
+  margin-top: 9rem;
+}
+.hero_content button {
+  margin: 4rem 0 10.5rem;
+}
+/* hero image */
+.hero_image {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 3rem;
+}
+.hero_image div {
+  overflow: hidden;
+}
+.hero_image img {
+  transition: transform 1s ease;
+}
+.hero_image img:hover {
+  transform: scale(1.1);
+}
+
+/* Collection section start */
+.collection {
+  margin-top: 10.4rem;
+  margin-bottom: 9rem;
+}
+.collection-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 6rem;
+}
+.colection-box {
+  width: 570px;
+  height: 580px;
+  overflow: hidden;
+  position: relative;
+}
+.colection-box img {
+  width: 100%;
+  height: 100%;
+  object-position: bottom;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+.colection-box img:hover {
+  transform: scale(1.1);
+}
+.colection-box h3 {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+}
+/* Collection section end */
+
+/* New Arrivals section start */
+.new-arrival {
+  margin-top: 9rem;
+}
+.product-card-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid black;
+}
+.prodect-card {
+  margin-top: 5rem;
+  width: 370px;
+}
+.prodect-card div {
+  overflow: hidden;
+}
+.prodect-card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+.prodect-card img:hover {
+  transform: scale(1.1);
+}
+.price-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+}
+.pro-name-price h5 {
+  color: var(--text-color);
+}
+.pro-name-price p {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3rem;
+  font-family: var(--font-Plus-Jakarta);
+  color: var(--text-color);
+}
+.pro-add-icon {
+  width: 66px;
+  height: 66px;
+  background: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* New Arrivals section end */
+
+/* offer section start */
+.offer {
+  background: var(--text-color);
+  margin-top: 10rem;
+}
+/* offer-content */
+.offer-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.offer-text {
+  flex-basis: 50%;
+  margin: 10rem 0;
+}
+.offer-text p:nth-child(1) {
+  color: #fff0e3;
+  margin-bottom: 1rem;
+}
+
+.offer .offer-text p:first-child{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -22px;
+}
+.offer .offer-text h2{
+  margin: 15px 0;
+}
+
+.offer-text h2,
+h5 {
+  color: #ffffff;
+}
+.offer-text p:last-child {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1.1rem;
+}
+.offer-button {
+  flex-basis: 50%;
+  margin-left: 33rem;
+  margin-top: 5rem;
+}
+/*? sliders */
+.slider-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.offer .slider {
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 80s linear infinite;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: calc(250px * 18);
+}
+
+.slider .slide-track:hover {
+  animation-play-state: paused;
+}
+
+.offer .slider .slide:nth-child(odd) {
+  height: 350px;
+  width: 300px;
+}
+.offer .slider .slide:nth-child(even) {
+  height: 200px;
+  width: 300px;
+}
+.offer .slide {
+  overflow: hidden;
+}
+.offer .slide img {
+  transition: transform 1s ease;
+}
+.offer .slide img:hover {
+  transform: scale(1.2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+/* offer section end */
+
+/* Brand section start */
+.brand {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.brand-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.bra-cont-icon i {
+  font-size: 2rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+/* slide */
+
+.brand .slider-box .slider .slide {
+  height: auto;
+  width: 300px;
+}
+.brand .slide img {
+  transition: 0.5s;
+}
+.brand .slide img:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* Brand section End */
+
+/* Abouts US section start */
+.about-us {
+  background-color: var(--bg-color);
+}
+.about-content {
+  padding-top: 10rem;
+  padding-right: 15rem;
+}
+.about-content p {
+  padding: 1rem 0;
+}
+.about-content button {
+  margin-top: 3rem;
+}
+/* about-image */
+.about-image {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.about-us .slider-box {
+  background: #ffffff;
+  padding-top: 6rem;
+  margin-bottom: 10rem;
+}
+.about-us .slider-box .slide-track .slide {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.about-us .slider-box .slide-track .slide img {
+  width: 88px;
+  height: 88px;
+  border: 50%;
+  cursor: pointer;
+}
+/* Abouts US section end */
+
+/* Inspiration section start */
+.inspiration {
+  margin-bottom: 6rem;
+}
+.insprition-content {
+  margin: 10rem 0 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.insprition-content a {
+  font-size: 2.4rem;
+  color: var(--p-text-color);
+}
+.inspirtion-image-box {
+  display: flex;
+  gap: 3rem;
+}
+.inspirtion-image-box .image-box {
+  overflow: hidden;
+}
+.inspirtion-image-box .image-box img {
+  transition: transform 1s ease;
+}
+.inspirtion-image-box .image-box img:hover {
+  transform: scale(1.1);
+}
+
+/* Inspiration section send */
+
+/* Footer style start */
+.footer {
+  background: var(--text-color);
+}
+.footer-container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+.footer-coll-top {
+  text-align: center;
+  padding: 7rem 10rem 0 10rem;
+}
+
+.footer-coll-top p:nth-child(2) {
+  color: rgba(255, 253, 249, 0.7);
+}
+/* footer-coll */
+.footer-coll {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+}
+.footer-coll-top .logo{
+  margin-bottom: 2rem;
+}
+.footer-coll p {
+  color: rgba(255, 253, 249, 0.6);
+}
+
+footer p:last-child {
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+}
+
+/* Footer style End */
+
+/* ! Responsive */
+/* Media Queries for responsiveness */
+
+/* Tablets and smaller devices */
+@media (max-width: 991px) {
+  html {
+    font-size: 0.5rem;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+
+  .navigation ul li a {
+    padding: 1rem 2rem;
+  }
+  .product-card-list {
+    gap: 1rem;
+    padding-bottom: 5rem;
+  }
+  .image-item{
+    display: none;
+  }
+
+  .about-image {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .product-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+/* Mobile devices */
+@media (max-width: 768px) {
+  html {
+    font-size: 0.438rem;
+  }
+  .container {
+    padding: 0 2.5rem;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+  .navigation {
+    padding: 0 3rem;
+  }
+  .navigation .side-menu {
+    font-size: 4rem;
+    display: block;
+    cursor: pointer;
+  }
+  .navigation .logo {
+    width: 5.5rem;
+  }
+  /* hero */
+  .hero_content h1 {
+    padding: 0;
+  }
+
+  /* collection */
+  .collection-group {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .colection-box {
+    width: 100%;
+    height: 100%;
+  }
+  /* new a */
+  .prodect-card {
+    width: 100%;
+    height: 100%;
+  }
+  .prodect-card img {
+    width: 100%;
+  }
+  .product-card-list {
+    padding-bottom: 5rem;
+  }
+  /* offer */
+  .offer-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+  }
+  .offer-text {
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
+  .offer-button {
+    flex-basis: 100%;
+    margin: 5rem 0 6rem 0;
+  }
+  /* Brand */
+  .bra-cont-icon i {
+    display: none;
+  }
+  .brand .slider-box .slider .slide {
+    width: 200px;
+  }
+  /* about us */
+  .about-content {
+    padding-top: 8rem;
+    padding-right: 0;
+  }
+  /* about-image */
+  .about-image {
+    flex-direction: row-reverse;
+    margin-top: 8rem;
+  }
+  .institution-line {
+    display: none;
+  }
+  /* insprition */
+  .insprition-content {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    margin-top: 0;
+  }
+  .insprition-content a {
+    font-size: 2.4rem;
+    color: var(--p-text-color);
+  }
+  /* footer */
+  .footer-container {
+    width: 90%;
+  }
+  .footer-coll-top {
+    text-align: center;
+    padding: 0;
+    padding-top: 5rem;
+  }
+  .footer-coll-top p {
+    margin: 0;
+  }
+  .footer-coll {
+    flex-direction: column;
+    align-items: start;
+    padding: 3rem 0;
+  }
+  .footer-coll br {
+    display: none;
+  }
+}
